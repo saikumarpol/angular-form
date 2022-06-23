@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+        <input type="checkbox" #boldCheck (click)="ChangeStyle(boldCheck)" >
+        Bold
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+         <p class="text-center" [style.fontWeight]="isBold? 'bold' : 'normal' ">
+         Wipro App
+         </p>
+        </div>
+    </div>
+</div>

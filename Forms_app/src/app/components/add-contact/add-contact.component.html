@@ -1,0 +1,42 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form #contactform ="ngForm">
+                <div class="mt-2">
+                 <input type="text" #firstname="ngModel" name="firtsname" required class="form-control" [(ngModel)]= "contact.firstname" placeholder="First Name">
+                 <div class="text-danger">
+                     First name is required
+                 </div>
+                </div>
+                <div class="mt-2">
+                    <input type="text" #lastname ="ngModel" name="firtsname" required class="form-control" [(ngModel)]= "contact.lastname" placeholder="Last Name">
+                    <div class="text-danger" >
+                        Last name is required
+                    </div>   
+                </div>
+                   <div class="mt-2">
+                    <input type="text" #email="ngModel" name="email" required class="form-control" [(ngModel)]= "contact.email" placeholder="Email Id">
+                    <div class="text-danger" >
+                        Email is required
+                    </div>   
+                </div>
+                   <div class="mt-2">
+                    <input type="text" #city="ngModel" name="city" required class="form-control" [(ngModel)]= "contact.city" placeholder="City">
+                    <div class="text-danger">
+                        City is required
+                    </div>   
+                </div>
+                   <div class="mt-2">
+                    <input type="text" #phone="ngModel" name="phone" required class="form-control" [(ngModel)]= "contact.phone" placeholder="Phone">
+                    <div class="text-danger" >
+                        Phone is required
+                    </div>  
+                </div>
+                   <div class="mt-2">
+                    <button class="btn btn-secondary">Add Contact</button>
+                   </div>
+            </form>
+        </div>
+    </div>
+</div>

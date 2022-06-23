@@ -1,0 +1,21 @@
+
+
+<!-----String Interpolation-->
+<h2>Welcome to {{username}}</h2>
+
+<!-----Property Binding-->
+<input type="text" [id]="Id" >
+<input type=""text id="{{Id}}">
+<input type="text" [disabled]="isDisabled">
+
+<!----Style Binding-->
+
+<h2 [style.color]="headingColor">StackRoute</h2>
+<h2 [style.color]="isError ? 'red' : 'green'">StackRoute</h2>
+
+<h2 [style.fontStyle]="isError ? 'italic' : 'normal'">StackRoute</h2>
+
+<h2 [style.textDecoration]="isError ? 'underline' : 'none'">StackRoute</h2>
+
+<h2 [ngStyle]="myStyle">StackRoute</h2>
+
